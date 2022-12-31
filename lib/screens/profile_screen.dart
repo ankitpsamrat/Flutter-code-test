@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Profile extends StatelessWidget {
-  const Profile({Key? key}) : super(key: key);
+class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,22 +10,16 @@ class Profile extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.lightGreen,
         body: Container(
-          padding: const EdgeInsets.only(
-            top: 25,
-          ),
+          padding: const EdgeInsets.only(top: 25),
           child: Column(
             children: const [
               CircleAvatar(
                 radius: 100,
                 backgroundImage: AssetImage(
-                  'assets/images/mypic.png',
+                  'assets/images/my pic.jpg',
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(
-                  top: 15,
-                ),
-              ),
+              Padding(padding: EdgeInsets.only(top: 15)),
               Text(
                 "Ankit Pratap Samrat",
                 style: TextStyle(
@@ -35,11 +29,7 @@ class Profile extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.only(
-                  top: 10,
-                ),
-              ),
+              Padding(padding: EdgeInsets.only(top: 10)),
               Text(
                 "Flutter Developer",
                 style: TextStyle(
