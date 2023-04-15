@@ -16,7 +16,7 @@ class ProfileScreen extends StatelessWidget {
               CircleAvatar(
                 radius: 100,
                 backgroundImage: AssetImage(
-                  'assets/images/my pic.jpg',
+                  'assets/images/myPic.jpg',
                 ),
               ),
               Padding(padding: EdgeInsets.only(top: 15)),
