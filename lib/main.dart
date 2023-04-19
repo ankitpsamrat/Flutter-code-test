@@ -1,4 +1,3 @@
-import 'package:code_test/screens/drag_drop.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,7 +18,6 @@ class MyApp extends StatelessWidget {
       // home: HomePage2(),
       // home: About(),
       // home: TopSkills(),
-      home: MyDraggableImage(),
     );
   }
 }
