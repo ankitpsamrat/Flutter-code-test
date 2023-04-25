@@ -1,3 +1,4 @@
+import 'package:code_test/screens/stream_builder_method.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       // home: HomePage2(),
       // home: About(),
       // home: TopSkills(),
+      home: StreamBuilderMethod(),
     );
   }
 }
