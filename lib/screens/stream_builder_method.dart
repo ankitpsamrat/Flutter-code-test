@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
 
-class StreamBuilderMethod extends StatefulWidget {
+class StreamBuilderMethod extends StatelessWidget {
   const StreamBuilderMethod({super.key});
 
-  @override
-  State<StreamBuilderMethod> createState() => _StreamBuilderMethodState();
-}
-
-class _StreamBuilderMethodState extends State<StreamBuilderMethod> {
   //
-
   Stream<int> generateNumber() async* {
     for (int i = 1; i <= 100; i++) {
       await Future.delayed(const Duration(seconds: 1));
@@ -21,21 +15,21 @@ class _StreamBuilderMethodState extends State<StreamBuilderMethod> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         title: Text('Stream Builder'),
       ),
       body: Column(
         children: [
           StreamBuilder(
             stream: generateNumber(),
-            // initialData: 0,
             builder: (BuildContext context, AsyncSnapshot snapshot) {
-              //  if initial data are not available then use this 'if' condition to show any things
-
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return CircularProgressIndicator();
+                return Center(child: CircularProgressIndicator());
               } else {
-                return Text(
-                  snapshot.data.toString(),
+                return Center(
+                  child: Text(
+                    snapshot.data.toString(),
+                  ),
                 );
               }
             },
