@@ -26,10 +26,10 @@ class SkillCard extends StatelessWidget {
           color: Colors.white,
         ),
         child: SizedBox(
-          height: !Utils.isMobile(context) ? Utils.mdqw(context) / 6.8 : 77,
-          width: !Utils.isMobile(context) ? Utils.mdqw(context) / 6.8 : 77,
+          height: !AppUI.isMobile(context) ? AppUI.dw(context) / 6.8 : 77,
+          width: !AppUI.isMobile(context) ? AppUI.dw(context) / 6.8 : 77,
           child: Padding(
-            padding: Utils.isMobile(context)
+            padding: AppUI.isMobile(context)
                 ? const EdgeInsets.all(8.0)
                 : const EdgeInsets.all(30.0),
             child: Image.network(url),
@@ -60,8 +60,7 @@ class TopSkills extends StatelessWidget {
           const SizedBox(height: 25),
           Padding(
             padding: EdgeInsets.symmetric(
-              horizontal:
-                  Utils.isMobile(context) ? 10 : Utils.mdqw(context) / 4,
+              horizontal: AppUI.isMobile(context) ? 10 : AppUI.dw(context) / 4,
             ),
             child: Wrap(
               children: const [
