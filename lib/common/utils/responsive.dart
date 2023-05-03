@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Utils {
+class AppUI {
   static bool isMobile(BuildContext context) {
     return MediaQuery.of(context).size.width <= 600;
   }
 
-  static double mdqh(BuildContext context) {
+  static double dh(BuildContext context) {
     return MediaQuery.of(context).size.height;
   }
 
-  static double mdqw(BuildContext context) {
+  static double dw(BuildContext context) {
     return MediaQuery.of(context).size.width;
   }
 }
