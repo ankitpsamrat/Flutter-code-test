@@ -8,7 +8,7 @@ class ValueNotifierTest extends StatefulWidget {
 }
 
 class _ValueNotifierTestState extends State<ValueNotifierTest> {
-   ValueNotifier<int> counterNotifier = ValueNotifier<int>(0);
+  ValueNotifier<int> counterNotifier = ValueNotifier<int>(0);
 
   @override
   void dispose() {
@@ -18,7 +18,6 @@ class _ValueNotifierTestState extends State<ValueNotifierTest> {
 
   @override
   Widget build(BuildContext context) {
-    print('HOMEPAGE BUILT');
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
