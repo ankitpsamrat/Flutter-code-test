@@ -1,5 +1,5 @@
+import 'package:code_test/screens/material_design.dart';
 import 'package:flutter/material.dart';
-import 'screens/value_notifier.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,8 +20,7 @@ class MyApp extends StatelessWidget {
       // home: About(),
       // home: TopSkills(),
       // home: StreamBuilderMethod(),
-      // home: MaterialDesign(),
-      home: ValueNotifierTest(),
+      home: MaterialDesign(),
     );
   }
 }
