@@ -1,4 +1,4 @@
-import 'package:code_test/screens/material_design.dart';
+import 'package:code_test/screens/animated_search_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +20,9 @@ class MyApp extends StatelessWidget {
       // home: About(),
       // home: TopSkills(),
       // home: StreamBuilderMethod(),
-      home: MaterialDesign(),
+      // home: MaterialDesign(),
+      // home: DottedLineScreen(),
+      home: AnimatedSearchBar(),
     );
   }
 }
