@@ -10,7 +10,7 @@ class MaterialDesign extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: Examples(),
+      home: const Examples(),
     );
   }
 }
@@ -22,7 +22,7 @@ class Examples extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material Design'),
+        title: const Text('Material Design'),
       ),
       body: Center(
         child: Column(
@@ -30,11 +30,11 @@ class Examples extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {},
-              child: Text('Elevated'),
+              child: const Text('Elevated'),
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.person),
+              icon: const Icon(Icons.person),
             ),
             Switch(
               value: true,
@@ -42,19 +42,19 @@ class Examples extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {},
-              child: Text('Text Button'),
+              child: const Text('Text Button'),
             ),
             OutlinedButton(
               onPressed: () {},
-              child: Text('Outline Button'),
+              child: const Text('Outline Button'),
             ),
-            Text('Material Design')
+            const Text('Material Design')
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }

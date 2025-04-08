@@ -82,7 +82,7 @@ class _AnimatedFloatingButtonState extends State<AnimatedFloatingButton> {
             onPressed: () {
               // Your onPressed logic
             },
-            child: Icon(
+            child: const Icon(
               Icons.file_upload_outlined,
             ),
           ),

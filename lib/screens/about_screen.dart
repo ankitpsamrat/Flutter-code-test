@@ -1,5 +1,3 @@
-// ignore_for_file: sized_box_for_whitespace
-
 import 'package:flutter/material.dart';
 
 class AboutScreen extends StatelessWidget {
@@ -14,15 +12,15 @@ class AboutScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: SafeArea(
-          child: Container(
+          child: SizedBox(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     Text(
                       'About Me',
                       style: TextStyle(fontSize: 20),

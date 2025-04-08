@@ -5,7 +5,7 @@ class DottedLineScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: DottedLine(
           direction: LineDirection.vertical,
@@ -31,6 +31,7 @@ class DottedLine extends StatelessWidget {
   final EdgeInsetsGeometry margin;
 
   const DottedLine({
+    super.key,
     required this.direction,
     this.color = Colors.black,
     this.stroke = 2.0,

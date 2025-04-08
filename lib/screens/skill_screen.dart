@@ -62,8 +62,8 @@ class TopSkills extends StatelessWidget {
             padding: EdgeInsets.symmetric(
               horizontal: AppUI.isMobile(context) ? 10 : AppUI.dw(context) / 4,
             ),
-            child: Wrap(
-              children: const [
+            child: const Wrap(
+              children: [
                 SkillCard(
                   url:
                       'https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg',

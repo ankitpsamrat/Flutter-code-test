@@ -22,10 +22,10 @@ class _InputDataScreenState extends State<InputDataScreen> {
       appBar: AppBar(),
       body: Column(
         children: [
-          SizedBox(height: 50),
+          const SizedBox(height: 50),
           TextField(
             controller: myController,
-            decoration: InputDecoration(labelText: 'Enter Fruit Name'),
+            decoration: const InputDecoration(labelText: 'Enter Fruit Name'),
           ),
           ElevatedButton(
             onPressed: () {
@@ -66,10 +66,10 @@ class _DetailScreenState extends State<DetailScreen> {
       body: Center(
         child: Column(
           children: [
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             Text(
               widget.title,
-              style: TextStyle(fontSize: 54),
+              style: const TextStyle(fontSize: 54),
             ),
           ],
         ),

@@ -21,7 +21,7 @@ class _AnimatedSearchBarState extends State<AnimatedSearchBar> {
           children: [
             GestureDetector(
               onTap: _doToggle,
-              child: Icon(
+              child: const Icon(
                 Icons.search,
                 size: 24.0,
               ),
@@ -45,7 +45,7 @@ class _AnimatedSearchBarState extends State<AnimatedSearchBar> {
               ),
               child: TextField(
                 textInputAction: TextInputAction.search,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.black,
                 ),
                 decoration: InputDecoration(

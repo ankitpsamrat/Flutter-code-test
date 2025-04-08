@@ -11,8 +11,8 @@ class ProfileScreen extends StatelessWidget {
         backgroundColor: Colors.lightGreen,
         body: Container(
           padding: const EdgeInsets.only(top: 25),
-          child: Column(
-            children: const [
+          child: const Column(
+            children: [
               CircleAvatar(
                 radius: 100,
                 backgroundImage: AssetImage(
