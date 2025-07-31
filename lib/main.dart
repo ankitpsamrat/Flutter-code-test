@@ -1,4 +1,4 @@
-import 'package:code_test/screens/animated_floating_btn.dart';
+import 'package:code_test/screens/slider_explore.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,7 +23,8 @@ class MyApp extends StatelessWidget {
       // home: MaterialDesign(),
       // home: DottedLineScreen(),
       // home: AnimatedSearchBar(),
-      home: AnimatedFloatingButton(),
+      // home: AnimatedFloatingButton(),
+      home: SliderExplore(),
     );
   }
 }
