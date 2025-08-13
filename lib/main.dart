@@ -1,4 +1,4 @@
-import 'package:code_test/screens/slider_explore.dart';
+import 'package:code_test/screens/wheel_time_use.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
       // home: DottedLineScreen(),
       // home: AnimatedSearchBar(),
       // home: AnimatedFloatingButton(),
-      home: SliderExplore(),
+      // home: SliderExplore(),
+      home: WheelTimeUse(),
     );
   }
 }
