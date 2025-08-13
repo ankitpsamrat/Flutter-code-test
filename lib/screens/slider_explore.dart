@@ -1,4 +1,4 @@
-import 'package:code_test/helpers/custom_slider.dart';
+import 'package:code_test/screens/custom_slider.dart';
 import 'package:flutter/material.dart';
 
 class SliderExplore extends StatefulWidget {
