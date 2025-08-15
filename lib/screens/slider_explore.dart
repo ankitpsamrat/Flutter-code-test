@@ -1,4 +1,5 @@
 import 'package:code_test/screens/custom_slider.dart';
+import 'package:code_test/screens/custom_slider_new.dart';
 import 'package:flutter/material.dart';
 
 class SliderExplore extends StatefulWidget {
@@ -37,6 +38,13 @@ class _SliderExploreState extends State<SliderExplore> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
             child: CustomSlider(
+              value: 0.5,
+              onChanged: (value) {},
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
+            child: CustomSliderNew(
               value: 0.5,
               onChanged: (value) {},
             ),
