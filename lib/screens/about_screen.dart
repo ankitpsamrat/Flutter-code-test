@@ -6,10 +6,7 @@ class AboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('About page'),
-        elevation: 0,
-      ),
+      appBar: AppBar(title: const Text('About page'), elevation: 0),
       body: SingleChildScrollView(
         child: SafeArea(
           child: SizedBox(
@@ -20,12 +17,7 @@ class AboutScreen extends StatelessWidget {
               children: <Widget>[
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      'About Me',
-                      style: TextStyle(fontSize: 20),
-                    ),
-                  ],
+                  children: [Text('About Me', style: TextStyle(fontSize: 20))],
                 ),
                 Container(
                   padding: const EdgeInsets.all(15),
@@ -34,9 +26,7 @@ class AboutScreen extends StatelessWidget {
                   color: const Color.fromARGB(31, 158, 158, 158),
                   child: const Text(
                     'Flutter is an open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase.Flutter code compiles to ARM or Intel machine code as well as JavaScript, for fast performance on any device.',
-                    style: TextStyle(
-                      fontSize: 18,
-                    ),
+                    style: TextStyle(fontSize: 18),
                   ),
                 ),
                 Container(
@@ -46,9 +36,7 @@ class AboutScreen extends StatelessWidget {
                   color: const Color.fromARGB(31, 158, 158, 158),
                   child: const Text(
                     'Flutter is an open source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase.Flutter code compiles to ARM or Intel machine code as well as JavaScript, for fast performance on any device.',
-                    style: TextStyle(
-                      fontSize: 18,
-                    ),
+                    style: TextStyle(fontSize: 18),
                   ),
                 ),
               ],

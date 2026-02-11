@@ -6,9 +6,7 @@ class HomeScreen1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Hello App"),
-      ),
+      appBar: AppBar(title: const Text("Hello App")),
       body: Container(
         color: Colors.black,
         width: MediaQuery.of(context).size.width,

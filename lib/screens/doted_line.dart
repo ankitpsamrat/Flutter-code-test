@@ -6,21 +6,14 @@ class DottedLineScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: DottedLine(
-          direction: LineDirection.vertical,
-        ),
-      ),
+      body: Center(child: DottedLine(direction: LineDirection.vertical)),
     );
   }
 }
 
 /////   dotted line core code starting from here //////
 
-enum LineDirection {
-  horizontal,
-  vertical,
-}
+enum LineDirection { horizontal, vertical }
 
 class DottedLine extends StatelessWidget {
   final LineDirection direction;

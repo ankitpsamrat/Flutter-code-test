@@ -7,9 +7,7 @@ class MaterialDesign extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
+      theme: ThemeData(useMaterial3: true),
       home: const Examples(),
     );
   }
@@ -21,34 +19,20 @@ class Examples extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Material Design'),
-      ),
+      appBar: AppBar(title: const Text('Material Design')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text('Elevated'),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.person),
-            ),
-            Switch(
-              value: true,
-              onChanged: (value) {},
-            ),
-            TextButton(
-              onPressed: () {},
-              child: const Text('Text Button'),
-            ),
+            ElevatedButton(onPressed: () {}, child: const Text('Elevated')),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.person)),
+            Switch(value: true, onChanged: (value) {}),
+            TextButton(onPressed: () {}, child: const Text('Text Button')),
             OutlinedButton(
               onPressed: () {},
               child: const Text('Outline Button'),
             ),
-            const Text('Material Design')
+            const Text('Material Design'),
           ],
         ),
       ),

@@ -21,10 +21,7 @@ class _AnimatedSearchBarState extends State<AnimatedSearchBar> {
           children: [
             GestureDetector(
               onTap: _doToggle,
-              child: const Icon(
-                Icons.search,
-                size: 24.0,
-              ),
+              child: const Icon(Icons.search, size: 24.0),
             ),
             AnimatedContainer(
               width: _toggle ? 0 : MediaQuery.of(context).size.width,
@@ -38,16 +35,11 @@ class _AnimatedSearchBarState extends State<AnimatedSearchBar> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(15.0),
-                border: Border.all(
-                  width: 1,
-                  color: Colors.grey[600]!,
-                ),
+                border: Border.all(width: 1, color: Colors.grey[600]!),
               ),
               child: TextField(
                 textInputAction: TextInputAction.search,
-                style: const TextStyle(
-                  color: Colors.black,
-                ),
+                style: const TextStyle(color: Colors.black),
                 decoration: InputDecoration(
                   border: InputBorder.none,
                   suffixIcon: AnimatedOpacity(

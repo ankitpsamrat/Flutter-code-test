@@ -67,10 +67,7 @@ class _DetailScreenState extends State<DetailScreen> {
         child: Column(
           children: [
             const SizedBox(height: 50),
-            Text(
-              widget.title,
-              style: const TextStyle(fontSize: 54),
-            ),
+            Text(widget.title, style: const TextStyle(fontSize: 54)),
           ],
         ),
       ),

@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import '../helpers/responsive.dart';
 
 class SkillCard extends StatelessWidget {
-  const SkillCard({
-    Key? key,
-    required this.url,
-  }) : super(key: key);
+  const SkillCard({Key? key, required this.url}) : super(key: key);
 
   final String url;
 
@@ -16,11 +13,7 @@ class SkillCard extends StatelessWidget {
       child: DecoratedBox(
         decoration: BoxDecoration(
           boxShadow: const [
-            BoxShadow(
-              color: Color(0xFFC4ACA1),
-              blurRadius: 6,
-              spreadRadius: 4,
-            )
+            BoxShadow(color: Color(0xFFC4ACA1), blurRadius: 6, spreadRadius: 4),
           ],
           borderRadius: BorderRadius.circular(10),
           color: Colors.white,
@@ -52,10 +45,7 @@ class TopSkills extends StatelessWidget {
         children: [
           const Text(
             'My Top Skills',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 25),
           Padding(

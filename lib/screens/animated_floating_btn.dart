@@ -46,16 +46,12 @@ class _AnimatedFloatingButtonState extends State<AnimatedFloatingButton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Animated Floating Button'),
-      ),
+      appBar: AppBar(title: const Text('Animated Floating Button')),
       body: ListView.builder(
         controller: _scrollController,
         itemCount: 50,
         itemBuilder: (context, index) {
-          return ListTile(
-            title: Text('Item $index'),
-          );
+          return ListTile(title: Text('Item $index'));
         },
       ),
       floatingActionButton: Stack(
@@ -82,9 +78,7 @@ class _AnimatedFloatingButtonState extends State<AnimatedFloatingButton> {
             onPressed: () {
               // Your onPressed logic
             },
-            child: const Icon(
-              Icons.file_upload_outlined,
-            ),
+            child: const Icon(Icons.file_upload_outlined),
           ),
         ],
       ),

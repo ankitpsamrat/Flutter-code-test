@@ -16,10 +16,7 @@ class _SliderExploreState extends State<SliderExplore> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Slider'),
-      ),
+      appBar: AppBar(centerTitle: true, title: const Text('Slider')),
       body: Column(
         children: [
           Text('Value: $_sliderValue'),
@@ -37,18 +34,12 @@ class _SliderExploreState extends State<SliderExplore> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
-            child: CustomSlider(
-              value: 0.5,
-              onChanged: (value) {},
-            ),
+            child: CustomSlider(value: 0.5, onChanged: (value) {}),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 30),
-            child: CustomSliderNew(
-              value: 0.5,
-              onChanged: (value) {},
-            ),
-          )
+            child: CustomSliderNew(value: 0.5, onChanged: (value) {}),
+          ),
         ],
       ),
     );

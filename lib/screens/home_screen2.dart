@@ -7,26 +7,18 @@ class HomeScreen2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
-      appBar: AppBar(
-        title: const Text("Hello App"),
-      ),
+      appBar: AppBar(title: const Text("Hello App")),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
           child: Card(
             child: Column(
               children: [
-                Image.asset(
-                  'assets/images/mypic.png',
-                  fit: BoxFit.cover,
-                ),
+                Image.asset('assets/images/mypic.png', fit: BoxFit.cover),
                 const SizedBox(height: 20),
                 const Text(
                   "Change me",
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 20),
                 const Padding(

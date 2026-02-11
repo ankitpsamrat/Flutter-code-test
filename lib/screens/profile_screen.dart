@@ -15,9 +15,7 @@ class ProfileScreen extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 100,
-                backgroundImage: AssetImage(
-                  'assets/images/myPic.jpg',
-                ),
+                backgroundImage: AssetImage('assets/images/myPic.jpg'),
               ),
               Padding(padding: EdgeInsets.only(top: 15)),
               Text(
@@ -41,15 +39,9 @@ class ProfileScreen extends StatelessWidget {
               ),
               Card(
                 color: Colors.white,
-                margin: EdgeInsets.symmetric(
-                  vertical: 20,
-                  horizontal: 25,
-                ),
+                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 25),
                 child: ListTile(
-                  leading: Icon(
-                    Icons.phone,
-                    color: Colors.redAccent,
-                  ),
+                  leading: Icon(Icons.phone, color: Colors.redAccent),
                   title: Text(
                     "+91 7523878181",
                     style: TextStyle(
@@ -63,15 +55,9 @@ class ProfileScreen extends StatelessWidget {
               ),
               Card(
                 color: Colors.white,
-                margin: EdgeInsets.symmetric(
-                  vertical: 10,
-                  horizontal: 25,
-                ),
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
                 child: ListTile(
-                  leading: Icon(
-                    Icons.email,
-                    color: Colors.lightBlueAccent,
-                  ),
+                  leading: Icon(Icons.email, color: Colors.lightBlueAccent),
                   title: Text(
                     "ankit.p.samrat@gmail.com",
                     style: TextStyle(

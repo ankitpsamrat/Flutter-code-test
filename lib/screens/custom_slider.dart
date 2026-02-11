@@ -67,10 +67,7 @@ class _CustomSliderState extends State<CustomSlider> {
                   gradient: LinearGradient(
                     begin: Alignment.centerLeft,
                     end: Alignment.centerRight,
-                    colors: [
-                      Colors.green.shade200,
-                      Colors.green,
-                    ],
+                    colors: [Colors.green.shade200, Colors.green],
                   ),
                 ),
               ),

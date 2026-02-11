@@ -41,11 +41,11 @@ class _WheelTimePickerState extends State<WheelTimePicker> {
   void _onTimeChanged() {
     final int hour24 = _selectedAmPm == 0
         ? (_selectedHour == 12
-            ? 0
-            : _selectedHour) // Convert 12 AM to 0, others stay
+              ? 0
+              : _selectedHour) // Convert 12 AM to 0, others stay
         : (_selectedHour == 12
-            ? 12
-            : _selectedHour + 12); // Convert 12 PM to 12, others add 12
+              ? 12
+              : _selectedHour + 12); // Convert 12 PM to 12, others add 12
 
     final newTime = TimeOfDay(hour: hour24, minute: _selectedMinute);
     widget.onTimeChanged(newTime);
@@ -56,7 +56,7 @@ class _WheelTimePickerState extends State<WheelTimePicker> {
     required List<String> items,
     required ValueChanged<int> onSelectedItemChanged,
     required int
-        currentIndex, // The index of the currently centered item for styling
+    currentIndex, // The index of the currently centered item for styling
   }) {
     const double itemHeight = 40.0; // Height of each item in the wheel
 

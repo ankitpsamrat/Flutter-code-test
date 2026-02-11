@@ -86,9 +86,7 @@ class TodosScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Todos'),
-      ),
+      appBar: AppBar(title: const Text('Todos')),
       body: ListView.builder(
         itemCount: todos.length,
         itemBuilder: (context, index) {
@@ -99,9 +97,7 @@ class TodosScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => const DetailScreen(),
-                  settings: RouteSettings(
-                    arguments: todos[index],
-                  ),
+                  settings: RouteSettings(arguments: todos[index]),
                 ),
               );
             },
@@ -120,9 +116,7 @@ class DetailScreen extends StatelessWidget {
     final todo = ModalRoute.of(context)!.settings.arguments as Todo;
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(todo.title),
-      ),
+      appBar: AppBar(title: Text(todo.title)),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Text(todo.description),

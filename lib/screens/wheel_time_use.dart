@@ -7,9 +7,7 @@ class WheelTimeUse extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Select Time'),
-      ),
+      appBar: AppBar(title: const Text('Select Time')),
       body: Container(
         margin: const EdgeInsets.all(15),
         decoration: BoxDecoration(
@@ -20,7 +18,8 @@ class WheelTimeUse extends StatelessWidget {
           initialTime: TimeOfDay.now(),
           onTimeChanged: (newTime) {
             debugPrint(
-                'Selected time: ${newTime.hour}:${newTime.minute}:${newTime.period.name}');
+              'Selected time: ${newTime.hour}:${newTime.minute}:${newTime.period.name}',
+            );
           },
         ),
       ),
